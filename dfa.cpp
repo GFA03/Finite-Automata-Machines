@@ -9,7 +9,7 @@
 void graphBuild(std::unordered_map<char, int> Q[], std::vector<int> &F,std::ifstream& f)
 {
     int temp, node1, node2;
-    char alphabet;
+    char letter;
     std::string s;
     std::getline(f, s);
     std::stringstream ss(s);
@@ -18,9 +18,9 @@ void graphBuild(std::unordered_map<char, int> Q[], std::vector<int> &F,std::ifst
     while(f)
     {   
         f >> node1;
-        f >> alphabet;
+        f >> letter;
         f >> node2;
-        Q[node1][alphabet] = node2;
+        Q[node1][letter] = node2;
     }
 }
 
